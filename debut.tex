@@ -1,10 +1,284 @@
-\documentclass{beamer}
+\documentclass[lualatex,aspectratio=169]{beamer}
+
+\usepackage{ulem}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{bbold}
+\usepackage{qrcode}
+\usepackage{caption}
+
+\beamertemplatenavigationsymbolsempty
+
+\setmonofont{Inconsolata}
+\newfontfamily\emojifont[Renderer=HarfBuzz]{NotoColorEmoji}
+\newfontfamily\cjkfont{Noto Sans CJK JP}
+\newfontfamily\symbolfont{DejaVu Sans}
 
 \title{Debut}
 \author{Penbu}
 
 \begin{document}
   \maketitle
+
   \begin{frame}
+    \frametitle{Tell me about yourself}
+    \begin{description}[align=right]
+      \item[Name] Penbu {\cjkfont{}ペンブ}
+      \item[Height] 5$'$7$''$ (170 cm)
+      \item[Age] $n$, where $25 \leq n < 30$
+      \item[Birthday] April 30
+    \end{description}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Tell me about your fans}
+    \begin{description}[align=right]
+      \item[Fan name] Penbuds
+      \item[Oshi mark] {\emojifont\Uchar"1F9E9}\texttt{ U+1F9E9 JIGSAW PUZZLE PIECE}
+    \end{description}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{What languages do you know?}
+    \framesubtitle{Computer}
+
+    \begin{description}[align=right]
+      \item[Main]
+        JavaScript,
+        TypeScript,
+        HTML,
+        CSS,
+        Bash
+      \item[Familiar]
+        Lua,
+        \LaTeX{},
+        PHP 5,
+        Java 8
+      \item[Some experience]
+        C,
+        C\texttt{++},
+        Racket,
+        Prolog,
+        brainf***
+    \end{description}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{What languages do you know?}
+    \framesubtitle{Human}
+    \begin{itemize}
+      \item English
+      \item \sout{Taglish} Tagalog (broken)
+      \item Japanese (learning)
+      \item French (?)
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{What anime do you watch?}
+    \begin{itemize}
+      \item Yama no Susume (Encouragement of Climb)
+      \item ARIA
+      \item Sora yori mo Tooi Basho (A Place Further than the Universe)
+      \item Yuru Camp{\symbolfont{}△} (Laid-Back Camp)
+      \item Aiura
+      \item Gekkan Shoujo Nozaki-kun (Monthly Girls' Nozaki)
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{What games do you play?}
+    \begin{itemize}
+      \item Tetris
+      \item Puyo Puyo
+      \item Pinball
+      \item Minesweeper
+      \item Mahjong
+      \item Baba Is You
+      \item Chess
+      \item KJumpingCube
+      \item Jigsaw puzzles
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{What instruments do you play?}
+    \begin{itemize}
+      \item Percussion
+        \begin{itemize}
+          \item Glockenspiel
+          \item Cajon
+        \end{itemize}
+      \item Piano
+      \item Recorder
+      \item Kalimba
+      \item Otamatone
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{What styles of music do you write?}
+    \begin{itemize}
+      \item Orchestral
+      \item Concert band
+      \item Piano solo
+      \item Piano + Strings
+      \item Rock
+    \end{itemize}
+
+    All composed with \href{https://musescore.org/}{MuseScore}.
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{What kind of music do you listen to?}
+    \begin{block}{Genres}
+      \begin{itemize}
+        \item '70s--'90s pop/rock
+        \item Anime
+        \item VTuber
+        \item Classical/Concert band/Orchestral
+        \item Acoustic
+      \end{itemize}
+    \end{block}
+
+    \begin{block}{Artists}
+      \begin{itemize}
+        \item Oku Hanako {\cjkfont{}奥華子}
+        \item Peter Cetera
+      \end{itemize}
+    \end{block}
+  \end{frame}
+
+%  \begin{frame}
+%    \frametitle{What things do you like?}
+%    \begin{itemize}
+%      \item Learning
+%      \item Problem solving
+%      \item Programming
+%      \item Puzzle games
+%      \item FOSS
+%      \item Music
+%      \item Composing
+%      \item Anime
+%      \item VTubers
+%    \end{itemize}
+%  \end{frame}
+%
+%  \begin{frame}
+%    \frametitle{What do you dislike?}
+%    \begin{itemize}
+%      \item Bugs
+%      \item Tedious work
+%      \item Manual labour
+%      \item Walking
+%      \item Cleaning
+%    \end{itemize}
+%  \end{frame}
+
+  \begin{frame}
+    \frametitle{Why do you want to be a vtuber?}
+    \begin{itemize}
+      \item Fill niches
+      \item Do things I've been putting aside
+      %\item Compose a piece to be played by a vtuber band
+      \item \pause Watch vtubers less
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{What kind of content do you plan to make?}
+
+    \begin{columns}[T]
+      \column{0.5\textwidth}
+
+      \begin{block}{Technical}
+        \begin{itemize}
+          \item Programming challenges
+          \item Unconventional programming
+          \item Code reviews
+          \item Tool writing
+        \end{itemize}
+      \end{block}
+
+      \begin{block}{Games}
+        \begin{itemize}
+          \item Linux games
+          \item Switch games
+          \item Browser games
+        \end{itemize}
+      \end{block}
+
+      \column{0.5\textwidth}
+
+      \begin{block}{Music}
+        \begin{itemize}
+          \item Music composition, arranging
+          \item Piano improv
+          \item Instrument karaoke
+        \end{itemize}
+      \end{block}
+
+      \begin{block}{Miscellaneous}
+        \begin{itemize}
+          \item Fan art showcasing
+          \item Wikipedia surfing
+          \item VTuber clipping
+        \end{itemize}
+      \end{block}
+    \end{columns}
+    {\raggedleft\hfill\ldots and more!}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Who helped you?}
+    \begin{description}[align=right]
+      \item[Artist] \href{https://startist17.carrd.co/}{Startist17}
+      \item[Rigger] Winry
+      \item[Software] Inochi2D
+      \item[Music] \href{https://soundcloud.com/tpenguinltg}{tPenguinLTG}
+      \item[Overlay] \href{https://github.com/tpenguinltg}{tPenguinLTG}, Penbu
+      \item[Logo] Penbu
+      \item[Emotes] \href{https://twitter.com/Crystal_Cat44}{Crystal-Cat44}
+      \item[Special thanks] NVMind, Speedy905, DdcCabuslay, flo, Tubbs
+    \end{description}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{What hashtags do you check?}
+    \begin{description}
+      \item[General] \#PenbuVT
+      \item[Live] \#RealTimePenbu
+      \item[Art] \#VisualPenbu
+      \item[Meme] \#MemedPenbu
+      \item[Music] \#MusicalPenbu
+      \item[Clips] \#ClippedPenbu
+    \end{description}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Where can we follow you?}
+
+    \begin{columns}[T]
+      \column{0.333\textwidth}
+
+      \begin{description}
+        \item[YouTube {\color[HTML]{FF0000}\faYoutube}] \href{https://www.youtube.com/@PenbuVT}{@PenbuVT}
+        \item[Twitch {\color[HTML]{9146FF}\faTwitch}] \phantom{@}\href{https://twitch.tv/PenbuVT}{PenbuVT}
+          \only<1>{\item[Twitter {\color[HTML]{1D9BF0}\faTwitter}] \href{https://twitter.com/PenbuVT}{@PenbuVT}}
+          \only<2>{\item[\hfill X\:{\color[HTML]{000000}\Uchar"1D54F\reflectbox{\textbb{X}}\:}] \href{https://twitter.com/PenbuVT}{@PenbuVT}}
+        \item[GitHub {\color[HTML]{24292F}\faGithub}] \phantom{@}\href{https://github.com/penbuvt}{penbuvt}
+        \item[Website {\color[HTML]{0000FF}\faGlobe}] \phantom{@}\href{https://www.penbuvt.ca/}{penbuvt.ca}
+      \end{description}
+
+      \column{0.333\textwidth}
+
+      \begin{figure}
+        \centering
+        \captionsetup{justification=centering}
+        \qrcode{https://discord.gg/X5XZDfBSPG}
+        \caption*{Join the Discord {\color[HTML]{5865F2}\faDiscord} \\\href{https://discord.gg/X5XZDfBSPG}{discord.gg/X5XZDfBSPG}}
+      \end{figure}
+    \end{columns}
   \end{frame}
 \end{document}
